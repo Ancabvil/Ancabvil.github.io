@@ -43,17 +43,20 @@
 #pie{
 	font-family: handel_gothic;
 	color: azure;
-	justify-content: center;
+	
 }
 #imagen1{
 	z-index: 2;
 	border: 3px white;
-	withd : auto;
 	border-radius: 10px 0px 39px 22px;
 	box-shadow: 6px 20px 10px black;
-	
+	margin: auto;
 }
-
+#foto{
+	margin: auto;
+    width: 100%;
+    height: 100%; 
+}
 @font-face{
 	font-family: handel_gothic;
 	src: url("Handel Gothic D Bold.otf") format('opentype');
@@ -85,8 +88,11 @@ p{
 	font-size: medium;
 }
 html {
-width: 100%;
-height: 100%;
+width: 100% ;
+height: 100% ;
+margin: 0 ;
+border: 0 ;
+padding: 0 ;
 background: url("../images/pic3694907.jpg") no-repeat;
 }
 nav #menu{
