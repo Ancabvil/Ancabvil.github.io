@@ -1,0 +1,112 @@
+#landing{
+	position: absolute;
+	z-index: 1;
+}
+#entrada{
+    position: absolute;
+    z-index: 2;
+    left: 767px;
+    top: 440px;
+}
+#cabecera{
+	position: relative;
+	left: 40%;
+	z-index: 1;
+}
+#menu{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+	align-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+#articulo{
+	width: 50%;
+	border: 3px white;
+	border-radius: 10px 0px 39px 22px;
+	z-index: 1;
+	background-color:black;
+	opacity: 0.6;
+	float: left;
+	box-shadow: 6px 20px 10px black;
+}
+#articulo2{
+	border: 3px white;
+	border-radius: 10px 0px 39px 22px;
+	z-index: 1;
+	background-color:black;
+	opacity: 0.6;
+	float: right;
+	box-shadow: 6px 20px 10px black;
+}
+#pie{
+	font-family: handel_gothic;
+	color: azure;
+	justify-content: center;
+}
+#imagen1{
+	z-index: 2;
+	border: 3px white;
+	withd : auto;
+	border-radius: 10px 0px 39px 22px;
+	box-shadow: 6px 20px 10px black;
+	
+}
+
+@font-face{
+	font-family: handel_gothic;
+	src: url("Handel Gothic D Bold.otf") format('opentype');
+}
+a{
+	text-decoration:none;
+	color: white;
+	
+}
+
+h1{
+	color: azure;
+	font-family: handel_gothic;
+	font-size: 48px;
+}
+h3{
+	font-family: handel_gothic;
+	color: azure;
+	font-size: medium;
+}
+h2{
+	font-family: handel_gothic;
+	color: azure;
+}
+	
+p{
+	font-family: handel_gothic;
+	color: azure;
+	font-size: medium;
+}
+html {
+width: 100%;
+height: 100%;
+background: url("../images/pic3694907.jpg") no-repeat;
+}
+nav #menu{
+  padding-left: 4px;
+  font-family: handel_gothic;
+
+}
+
+nav #menu a {
+  color: white;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+nav #menu a:hover {
+  background:#7C5B5C;
+  color: white;
+}
+@media screen and (min-device-width:480px) and (max-device-width:480px){
+	nav ul{
+		display: flex;
+		justify-content: space-around;
+	}
+}
