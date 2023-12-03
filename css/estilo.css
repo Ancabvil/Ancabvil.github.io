@@ -66,8 +66,8 @@
 .gridImperios{
 	font-family: handel_gothic;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-template-rows: repeat(auto-fill,minmax(300px, 1fr, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
 	gap: 20px 40px;
 	justify-content: center;
 	align-content: center;
@@ -92,7 +92,7 @@
 	justify-content: flex-end;
 }
 .ejercito{
-	background-color: rgba(145,102,103,0.47);
+	background-color: rgba(28,80,142,0.27);
 	text-align: center;
 	justify-content: center;
 	color: azure;
