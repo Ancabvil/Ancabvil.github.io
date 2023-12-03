@@ -1,166 +1,76 @@
-#landing{
-	width: 100%;
-	height: 100%;
-	
-}
-#entrada{
-    position: center;
-    z-index: 2;
-    left: 50%;
-    top: 50%;
-	
-}
-#youtube{
-	align-self: baseline;
-	
-}
-#cabecera{
-	text-align: center;
-	left: 40%;
-	z-index: 1;
-}
-#menu{
-	display: flex;
-    flex-direction: row;
-    justify-content: center;
-	align-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-#articulo{
-	width: 50%;
-	border: 3px white;
-	border-radius: 10px 0px 39px 22px;
-	z-index: 1;
-	background-color:black;
-	opacity: 0.6;
-	float: left;
-	box-shadow: 6px 20px 10px black;
-}
-#articulo2{
-	border: 3px white;
-	border-radius: 10px 0px 39px 22px;
-	z-index: 1;
-	background-color:black;
-	opacity: 0.6;
-	float: right;
-	box-shadow: 6px 20px 10px black;
-}
-#pie{
-	font-family: handel_gothic;
-	color: azure;
-	text-align: center;
-}
-#imagen1{
-	z-index: 2;
-	border: 3px white;
-	border-radius: 10px 0px 39px 22px;
-	box-shadow: 6px 20px 10px black;
-	float:inherit;
+body{
+    background-image: url(../images/1700251673991.jpg);
+    background-size: auto;
 }
 
-@font-face{
-	font-family: handel_gothic;
-	src: url("Handel Gothic D Bold.otf") format('opentype');
-}
-.gridImperios{
-	font-family: handel_gothic;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
-	gap: 20px 40px;
-	justify-content: center;
-	align-content: center;
-	box-shadow: 10px 10px 10px   inset,
-		20px 20px 10px 10px;
-}
-.gridEntrada{
-	font-display: handel_gothic;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(45%, auto));
-	grid-template-rows: repeat(auto-fit,minmax(auto, auto));
-	gap: 20px 40px;
-	justify-content: center;
-	align-content: center;
-	border-radius: 10px 15px 39px 0px;
-	box-shadow: 20px 20px 10px 10px;
-}
-.Intro{
-	font-display: handel_gothic;
-	color: azure;
-	border-radius: 10px 0px 39px 22px;
-	justify-content: flex-end;
-}
-.ejercito{
-	background-color: rgba(28,80,142,0.27);
-	text-align: center;
-	justify-content: center;
-	color: azure;
-}
-html{
-	background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 76%, rgba(83,48,139,1) 90%, rgba(0,212,255,1) 100%);
-}
 a{
-	text-decoration:none;
-	color: white;
-	
+    text-decoration:none;
+    color:rgb(165, 86, 201);
+    font-size:20px; 
+    text-align: justify;
+        
 }
-
+@font-face{
+    font-family: fuente_man;
+    src:url('3rd\ Man.ttf')format('truetype');
+}
+#icono{
+    animation-direction: normal;
+}
 h1{
-	color: azure;
-	font-family: handel_gothic;
-	font-size: 48px;
+    font-family: fuente_man;
+    color: rgb(228, 126, 228);
+    font-size: 85px;
+    text-align: center;
+    }
+
+h2{
+    font-family: Lucida Sans;
+    color: blueviolet;
+    font-size: 25px;
+    text-align: center;
+    
 }
 h3{
-	font-family: handel_gothic;
-	color: azure;
-	font-size: medium;
+    font-family: fuente_man;
+    text-align: center;
+    font-size: 30px;
 }
-h2{
-	font-family: handel_gothic;
-	color: azure;
-	text-align: center;
+h5 {
+    font-family: fuente_man;
+    color: azure;
+    font-size: 20px;
 }
-	
-p{
-	font-family: handel_gothic;
-	color: azure;
-	font-size: medium;
+header{
+    background-color: rgb(228, 107, 98);
 }
-
-
-nav #menu{
-  padding-left: 4px;
-  font-family: handel_gothic;
-
+#somos{
+    text-align: center;
+    color: azure;
 }
 
-nav #menu a {
-  color: white;
-  text-decoration: none;
-  padding: .5em 1em;
+nav li{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding:4px 5px;
+    text-align: center;
 }
-nav #menu a:hover {
-  background:#7C5B5C;
-  color: white;
+
+a:hover{
+    color:rgb(160, 101, 101);
 }
-@media screen and (min-device-width:480px) and (max-device-width:480px){
-	.nav ul{
-		display: flex;
-		justify-content: space-around;
-	}
-	.mapa{
-	display: flex;
-		justify-content: space-around;
-	}
-	.youtube {
-	display: flex;
-	justify-content: flex-end;
-	}
-	.landing{
-		width: auto;
-		height: auto;
-	}
+nav{
+    color:rgb(160, 101, 101);
+    font-size:20px;
 }
+nav:hover{
+    cursor:default;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(51, 51, 51, 0);
+}
+
 
