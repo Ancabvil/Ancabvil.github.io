@@ -15,9 +15,14 @@
 	
 }
 #cabecera{
-	text-align: center;
-	left: 40%;
+	text-align:center;
 	z-index: 1;
+	background-image:url(../images/baner.png);
+	background-repeat: no-repeat;
+	align-self: center;
+	height: 200px;
+	border-radius: 39px 39px 39px 39px;
+	box-shadow: 6px 20px 10px black;
 }
 #menu{
 	display: flex;
@@ -143,21 +148,54 @@
 .imagen img{
 	width: 100%;
 }
-.contenedorCuriosidades{
+.flexCuriosidades{
 	font-display: handel_gothic;
-	display: grid;
-	grid-template-columns: 50%, 50%;
-	grid-template-rows: 50%, 50%;
-	gap: 20px 40px;
-	border-radius: 10px 15px 39px 0px;
-	box-shadow: 20px 20px 10px 10px;
+	display: flex;
+	flex-wrap:nowrap;
+	gap: 5px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	align-self: center;
+
+}
+.contenedorCuriosidades{
+	display: flex;
+	background-color: rgba(93, 145, 209, 0.534);
+	gap: 15px;
+	flex-direction: column;
+	align-items: stretch;
+	align-self: center;
 }
 .objeto {
-align-self: center;
+align-self:flex-start;
+}
+
+#nave{
+	transition-duration: 3s;
+	animation: animacion_nave 3s ease-out 0.5s infinite normal backwards;
+ }
+ 
+ #nave:hover{
+	position: static;
+	left:250px;
+ }
+
+@keyframes animacion_nave{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
 }
 html{
 	background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 76%, rgba(83,48,139,1) 90%, rgba(0,212,255,1) 100%);
+	padding: 8%;
 }
 a{
 	text-decoration:none;
@@ -169,6 +207,7 @@ h1{
 	color: azure;
 	font-family: handel_gothic;
 	font-size: 48px;
+	
 }
 h3{
 	font-family: handel_gothic;
@@ -186,7 +225,15 @@ p{
 	color: azure;
 	font-size: medium;
 }
-
+ol{
+	align-self: center;
+	text-align: center;
+}
+li{
+	font-family: handel_gothic;
+	color: azure;
+	font-size: medium;
+}
 
 nav #menu{
   padding-left: 4px;
