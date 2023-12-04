@@ -1,14 +1,13 @@
 #landing{
 	width: 100%;
 	height: 100%;
-	
+	z-index: 1;
 }
 #entrada{
-    position: center;
     z-index: 2;
     left: 50%;
     top: 50%;
-	
+	align-self: center;
 }
 #youtube{
 	align-self: baseline;
@@ -32,42 +31,23 @@
     align-items: stretch;
     flex-wrap: wrap;
 }
-#articulo{
-	width: 50%;
-	border: 3px white;
-	border-radius: 10px 0px 39px 22px;
-	z-index: 1;
-	background-color:black;
-	opacity: 0.6;
-	float: left;
-	box-shadow: 6px 20px 10px black;
-}
-#articulo2{
-	border: 3px white;
-	border-radius: 10px 0px 39px 22px;
-	z-index: 1;
-	background-color:black;
-	opacity: 0.6;
-	float: right;
-	box-shadow: 6px 20px 10px black;
-}
+
 #pie{
 	font-family: handel_gothic;
 	color: azure;
 	text-align: center;
 }
-#imagen1{
-	z-index: 2;
-	border: 3px white;
-	border-radius: 10px 0px 39px 22px;
-	box-shadow: 6px 20px 10px black;
-	float:inherit;
-}
+
 
 @font-face{
 	font-family: handel_gothic;
 	src: url("Handel Gothic D Bold.otf") format('opentype');
 }
+.contenedorIndex{
+	border-radius: 10px 15px 39px 0px;
+	box-shadow: 20px 20px 10px 10px;
+}
+
 .gridImperios{
 	font-family: handel_gothic;
 	display: grid;
@@ -174,22 +154,31 @@ align-self:flex-start;
 #nave{
 	transition-duration: 3s;
 	animation: animacion_nave 3s ease-out 0.5s infinite normal backwards;
+	transform: scale(1,1.5);
+	
  }
  
  #nave:hover{
-	position: static;
-	left:250px;
+	
+	rotate: 90deg;
+
  }
 
 @keyframes animacion_nave{
 	0%{
 		transform: rotate(0deg);
+		
+	transform: translate(25%, 0px);
 	}
 	50%{
 		transform: rotate(90deg);
+		
+	transform: translate(50%, 0px);
 	}
 	100%{
 		transform: rotate(0deg);
+		
+	transform: translate(0%, 0px);
 	}
 }
 html{
