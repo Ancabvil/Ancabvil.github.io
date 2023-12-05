@@ -44,8 +44,14 @@
 	src: url("Handel Gothic D Bold.otf") format('opentype');
 }
 .contenedorIndex{
-	border-radius: 10px 15px 39px 0px;
+	border-radius: 39px 39px 39px 39px;
 	box-shadow: 20px 20px 10px 10px;
+	background-image: url(/images/pic3694903.jpg);
+	width: 1480px;
+	height: 720px;
+	justify-content: center;
+	display: flex;
+	
 }
 
 .gridImperios{
@@ -64,21 +70,57 @@
 .gridEntrada{
 	font-display: handel_gothic;
 	display: grid;
-	grid-template-columns: 20%, 1fr;
-	grid-template-rows: 20%, 1fr;
+	margin: auto;
+	grid-template-columns: 100%, 1fr;
+	grid-template-rows: 30%, 1fr;
 	gap: 20px 40px;
 	justify-items: center;
 	align-items: center;
 	justify-content: center;
 	align-content: center;
-	border-radius: 10px 15px 39px 0px;
+	border-radius: 39px 39px 39px 39px;
 	box-shadow: 20px 20px 10px 10px;
 }
 .Intro{
 	font-display: handel_gothic;
 	color: azure;
 	border-radius: 10px 0px 39px 22px;
-	
+	display: grid;
+	margin: auto;
+	grid-template-columns: 100%;
+	grid-template-rows: 30%, 1fr;
+	column-gap: .5rem;
+	grid-row-gap: .5rem;
+	align-content: center;
+}
+.IntroFotoa{
+	border-radius: 39px 39px 39px 39px;
+	box-shadow: 20px 20px 10px 10px;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 100%;
+	grid-template-rows: 30%, 1fr;
+	column-gap: .5rem;
+	grid-row-gap: .5rem;
+	align-content: center;
+	background-image: url(/images/hacan1.jpg);
+	width: 641px;
+	height: 363px;
+
+}
+.IntroFotob{
+	border-radius: 39px 39px 39px 39px;
+	box-shadow: 20px 20px 10px 10px;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 100%;
+	grid-template-rows: 30%, 1fr;
+	column-gap: .5rem;
+	grid-row-gap: .5rem;
+	align-content: center;
+	background-image: url(/images/guerra.png);
+	width: 640px;
+	height: 400px;
 }
 .gridCronicas{	
 	width: 100%;
@@ -184,7 +226,7 @@ align-self:flex-start;
 html{
 	background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 76%, rgba(83,48,139,1) 90%, rgba(0,212,255,1) 100%);
-	padding: 8%;
+	padding: 4%;
 }
 a{
 	text-decoration:none;
@@ -196,7 +238,8 @@ h1{
 	color: azure;
 	font-family: handel_gothic;
 	font-size: 48px;
-	
+	margin: 0 auto;
+	align-self: center;
 }
 h3{
 	font-family: handel_gothic;
@@ -240,11 +283,20 @@ nav #menu a:hover {
   color: white;
 }
 @media (min-width:100px){
+	.contenedorIndex{
+
+	}
+	
+	
 	.gridCronicas{
 	grid-template-columns: repeat(1, 1fr);
 	}
 	.gridEntrada{
 	grid-template-columns: repeat(1, 1fr);
+	}
+	.Introimagen{
+		width: auto;
+		height: auto;
 	}
 	.gridImperios{
 	grid-template-columns: repeat(1, 1fr);
