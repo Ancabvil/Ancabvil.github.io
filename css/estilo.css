@@ -66,29 +66,29 @@
 	align-content: center;
 	box-shadow: 10px 10px 10px   inset,
 		20px 20px 10px 10px;
+	border-radius: 39px 39px 39px 39px;
 }
 .gridEntrada{
-	font-display: handel_gothic;
+	min-width: 200px;
+	font-family: handel_gothic;
 	display: grid;
-	margin: auto;
-	grid-template-columns: 100%, 1fr;
-	grid-template-rows: 30%, 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
 	gap: 20px 40px;
 	justify-items: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-content: center;
-	border-radius: 39px 39px 39px 39px;
 	box-shadow: 20px 20px 10px 10px;
+	border-radius: 39px 39px 39px 39px;
+
 }
 .Intro{
 	font-display: handel_gothic;
 	color: azure;
-	border-radius: 10px 0px 39px 22px;
+	border-radius: 39px 39px 39px 39px;
 	display: grid;
 	margin: auto;
-	grid-template-columns: 100%;
-	grid-template-rows: 30%, 1fr;
 	column-gap: .5rem;
 	grid-row-gap: .5rem;
 	align-content: center;
@@ -98,8 +98,6 @@
 	box-shadow: 20px 20px 10px 10px;
 	display: grid;
 	margin: auto;
-	grid-template-columns: 100%;
-	grid-template-rows: 30%, 1fr;
 	column-gap: .5rem;
 	grid-row-gap: .5rem;
 	align-content: center;
@@ -113,8 +111,6 @@
 	box-shadow: 20px 20px 10px 10px;
 	display: grid;
 	margin: auto;
-	grid-template-columns: 100%;
-	grid-template-rows: 30%, 1fr;
 	column-gap: .5rem;
 	grid-row-gap: .5rem;
 	align-content: center;
@@ -127,10 +123,23 @@
 	margin: auto;
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 30%, 1fr;
 	column-gap: .5rem;
 	grid-row-gap: .5rem;
-	align-content: center;
+	justify-items: center;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	border-radius: 39px 39px 39px 39px;
+}
+.introCronicas{
+	justify-items: center;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	border-radius: 39px 39px 39px 39px;
+	text-align: center;
+	font-family: handel_gothic;
+	color: azure;
 }
 .interior{
 	font-display: handel_gothic;
@@ -144,18 +153,9 @@
 	text-align: center;
 	justify-content: center;
 	color: azure;
+	border-radius: 39px 39px 39px 39px;
 }
-.contenedorCronicas{
-	font-display: handel_gothic;
-	color: azure;
-	border-radius: 10px 0px 39px 22px;
-	display: grid;
-	grid-template-columns: 45% 1fr;
-	margin: auto;
-	column-gap: normal;
-	align-content: center;
-	text-align: center;
-	}
+
 .galeria{
 	width:100%;
 	margin: auto;
@@ -257,16 +257,26 @@ p{
 	color: azure;
 	font-size: medium;
 }
-ol{
-	align-self: center;
-	text-align: center;
-}
+
 li{
 	font-family: handel_gothic;
 	color: azure;
 	font-size: medium;
+	justify-items: center;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
 }
-
+nav Ol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	
+  }
 nav #menu{
   padding-left: 4px;
   font-family: handel_gothic;
@@ -284,7 +294,7 @@ nav #menu a:hover {
 }
 @media (min-width:100px){
 	.contenedorIndex{
-
+		grid-template-columns: 1fr;
 	}
 	
 	
@@ -294,9 +304,11 @@ nav #menu a:hover {
 	.gridEntrada{
 	grid-template-columns: repeat(1, 1fr);
 	}
-	.Introimagen{
-		width: auto;
-		height: auto;
+	.IntroFotoa{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.IntroFotob{
+		grid-template-columns: repeat(1, 1fr);
 	}
 	.gridImperios{
 	grid-template-columns: repeat(1, 1fr);
@@ -304,6 +316,10 @@ nav #menu a:hover {
 
 
 @media (min-width:520px){
+
+	.contenedorIndex{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.gridCronicas{
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -315,6 +331,9 @@ nav #menu a:hover {
 		}
 }
 @media (min-width:720px){
+	.contenedorIndex{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.gridCronicas{
 		grid-template-columns:
 			repeat(3, 1fr);
@@ -326,6 +345,9 @@ nav #menu a:hover {
 		}
 }
 @media (min-width:1024px){
+	.contenedorIndex{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.gridCronicas{
 		grid-template-columns:
 			repeat(4, 1fr);
