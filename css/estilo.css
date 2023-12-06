@@ -1,8 +1,3 @@
-#landing{
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
 #entrada{
     z-index: 2;
     left: 50%;
@@ -71,52 +66,61 @@
 		20px 20px 10px 10px;
 	border-radius: 39px 39px 39px 39px;
 }
-.gridEntrada{
+
+
+.Intro{
 	width:100%;
 	margin: auto;
 	display:grid; 
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: .5rem;
-	row-gap: .5rem;
-	box-shadow: 10px 10px 10px   inset,
-		20px 20px 10px 10px;
+	grid-template-columns: repeat(2, 300px);
+	grid-template-areas: 
+	  "texto image"
+	  "image2 texto2"; 
+	justify-content: space-around; 
+	align-content: center; 
+	justify-items: center; 
+	align-items: center; 
+}
 
-}
-.Intro{
-	font-display: handel_gothic;
-	color: azure;
-	border-radius: 39px 39px 39px 39px;
-	display: grid;
-	margin: auto;
-	column-gap: .5rem;
-	grid-row-gap: .5rem;
-	align-content: center;
-	box-shadow:	20px 20px 10px 10px black;
-	border-radius: 39px 39px 39px 39px;
-}
-.IntroFotoa{
+.image{
+	grid-area: image;
 	border-radius: 39px 39px 39px 39px;
 	box-shadow: 20px 20px 10px 10px;
-	background-image: url(/images/hacan1.jpg);
-	background-repeat: no-repeat;
 	width: 641px;
 	height: 363px;
+	align-items: center;
+	align-self: center;
+}
+
+
+.texto{
+	grid-area: texto;
+	font-family: handel_gothic;
+	color: azure;
+	font-size: medium;
+	align-content: center;
+	align-items: center;
+}
+
+.texto2{
+	grid-area: texto2;
+	font-family: handel_gothic;
+	color: azure;
+	font-size: medium;
+	align-items: center;
+	align-self: center;
 
 }
-.IntroFotoa img{
-	width: 100%;
-}
-.IntroFotob{
+.image2{
+	grid-area: image2;
 	border-radius: 39px 39px 39px 39px;
 	box-shadow: 20px 20px 10px 10px;
-	background-image: url(/images/guerra.png);
-	background-repeat: no-repeat;
 	width: 640px;
 	height: 400px;
+	align-items: center;
+	align-self: center;
 }
-.IntroFotob img{
-	width: 100%;
-}
+
 .gridCronicas{	
 	width: 100%;
 	margin: auto;
@@ -212,7 +216,7 @@ align-self:flex-start;
  }
  
  #nave:hover{
-	transform: scale(1 0.5);
+	transform: scale(2, .5);
 
  }
 
@@ -303,6 +307,9 @@ nav #menu a:hover {
   color: white;
 }
 @media (min-width:100px){
+	.Intro{
+		grid-template-columns: repeat(1, 1fr);
+	}
 	.contenedorIndex{
 		width: 300px;
 	}
@@ -312,9 +319,7 @@ nav #menu a:hover {
 	.gridCronicas{
 	grid-template-columns: repeat(1, 1fr);
 	}
-	.gridEntrada{
-	grid-template-columns: repeat(1, 1fr);
-	}
+
 	}
 	.gridImperios{
 	grid-template-columns: repeat(1, 1fr);
@@ -325,13 +330,13 @@ nav #menu a:hover {
 	.contenedorIndex{
 		width: 520px;
 	}
-	
+	.Intro{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.gridCronicas{
 		grid-template-columns: repeat(2, 1fr);
 	}
-	.gridEntrada{
-		grid-template-columns: repeat(2, 1fr);
-		}
+	
 		.gridImperios{
 		grid-template-columns: repeat(2, 1fr);
 		}
@@ -340,12 +345,13 @@ nav #menu a:hover {
 	.contenedorIndex{
 		width: 720px;
 	}
+	.Intro{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.gridCronicas{
 		grid-template-columns:
 			repeat(3, 1fr);
-	}.gridEntrada{
-		grid-template-columns: repeat(2, 1fr);
-		}
+	}
 		.gridImperios{
 		grid-template-columns: repeat(3, 1fr);
 		}
@@ -354,12 +360,13 @@ nav #menu a:hover {
 	.contenedorIndex{
 		width: auto;
 	}
+	.Intro{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.gridCronicas{
 		grid-template-columns:
 			repeat(4, 1fr);
-	}.gridEntrada{
-		grid-template-columns: repeat(2, 1fr);
-		}
+	}
 		.gridImperios{
 		grid-template-columns: repeat(4, 1fr);
 		}
